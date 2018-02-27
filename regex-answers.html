@@ -1,0 +1,38 @@
+// Write a function that takes a word and returns true if the word ends with tonica
+
+
+console.log(/tonica/.test("Hi I'm Lian, I'm an apprentice at Techtonica"));
+
+
+// Write a function expression that takes a string replaces all instances of symantec with semantic?
+
+var str = "Everyday I go to symantec. Symantec.";
+var newStr = str.replace(/symantec/gi, "semantic");
+
+console.log(newStr);
+
+// Write a function that takes a string and deletes all words that end in ing?
+
+var string2 = "It's all happening happening happening happening."
+var newString = string2.replace(/ing\w*/g,"");
+//var newString = string2.replace(/[^a-z]ing$/g,"");
+console.log(newString);
+
+// Write a function that takes a string and returns true if it is an email address? Compare your answer with your neighbor.
+
+console.log(/@/.test("Hi my email is thompsonlian@yahoo.com."));
+
+
+// Write a function that takes a string containing names separated by commas like "Leah, Russell, Michelle" and returns an array of names, ["Leah", "Russell", "Michelle"]
+
+let string = "Leah, Russell, Michelle"
+console.log(string.split(","));
+
+// Write a regular expression that matches any of the Techontica participants names but not the instructors
+
+let apprentices = "TaLea, Michelle, Vivian, Lian, Soona, Zhenzhen, Mary, Stephanie, Ashley, Zaire, Karla";
+let filter = /\b(Zaire|Lian|Michelle|TaLea|Vivian|Zhenzhen|Soona|Mary|Ashley|Stephanie)\b/g;
+
+console.log(apprentices.match(filter));
+
+// What about a regular expression for all even-length strings?
